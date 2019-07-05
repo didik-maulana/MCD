@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@color/whiteLilac">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:contentPadding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_movie_poster"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:riv_corner_radius="6dp"
+                tools:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/img_movie_poster"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Toy Story 4" />
+
+            <TextView
+                android:id="@+id/tv_movie_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_movie_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/img_movie_poster"
+                android:textColor="@color/dustyGrey"
+                tools:text="December 12, 2019" />
+
+            <TextView
+                android:id="@+id/tv_movie_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_movie_title"
+                android:layout_toStartOf="@id/img_star"
+                android:textColor="@color/sandyBrown"
+                tools:text="9.8" />
+
+            <ImageView
+                android:id="@+id/img_star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/tv_movie_title"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/icon_star"
+                android:src="@drawable/ic_star"
+                android:tint="@color/sandyBrown" />
+
+            <TextView
+                android:id="@+id/tv_movie_genres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_star"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/img_movie_poster"
+                android:textColor="@color/dustyGrey"
+                tools:text="Action / Comedy / Adventure" />
+
+            <TextView
+                android:id="@+id/tv_movie_runtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_movie_genres"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/img_movie_poster"
+                android:textColor="@color/dustyGrey"
+                android:textSize="12sp"
+                tools:text="1h 20m" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

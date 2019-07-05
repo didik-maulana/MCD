@@ -4,15 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/whiteLilac"
-    android:padding="@dimen/content_margin"
-    tools:context=".presentation.main.MainActivity">
+    tools:context=".presentation.movie.MovieActivity">
 
     <ListView
         android:id="@+id/lv_movies"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="12dp">
 
     </ListView>
-
 
 </RelativeLayout>
