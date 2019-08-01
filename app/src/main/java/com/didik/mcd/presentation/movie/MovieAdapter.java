@@ -1,55 +1,40 @@
 package com.didik.mcd.presentation.movie;
 
-import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 
 import com.didik.mcd.R;
 import com.didik.mcd.model.Movie;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class MovieAdapter extends BaseAdapter {
+class MovieAdapter extends RecyclerView.Adapter<MovieViewHolder> {
 
-    private Context context;
-    private ArrayList<Movie> movies;
+    private List<Movie> movieList;
+    private MovieListener mItemListener;
 
-    MovieAdapter(Context context) {
-        this.context = context;
-        movies = new ArrayList<>();
+    MovieAdapter(List<Movie> movieList, MovieListener mItemListener) {
+        this.movieList = movieList;
+        this.mItemListener = mItemListener;
     }
 
-    void setMovies(ArrayList<Movie> movies) {
-        this.movies = movies;
+    @NonNull
+    @Override
+    public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
+        return new MovieViewHolder(view, mItemListener);
     }
 
     @Override
-    public int getCount() {
-        return movies.size();
+    public void onBindViewHolder(@NonNull MovieViewHolder viewHolder, int position) {
+        viewHolder.bindItem(movieList.get(position));
     }
 
     @Override
-    public Object getItem(int index) {
-        return movies.get(index);
-    }
-
-    @Override
-    public long getItemId(int index) {
-        return index;
-    }
-
-    @Override
-    public View getView(int index, View view, ViewGroup parent) {
-
-        if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.item_movie_layout, parent, false);
-        }
-
-        MovieViewHolder viewHolder = new MovieViewHolder(view);
-        Movie movie = (Movie) getItem(index);
-        viewHolder.bindMovie(movie);
-        return view;
+    public int getItemCount() {
+        return movieList.size();
     }
 }

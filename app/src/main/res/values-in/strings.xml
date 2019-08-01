@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Film</string>
+    <string name="icon_star">Ikon Bintang</string>
+    <string name="movie_poster">Poster Film</string>
+    <string name="released_date">Tanggal Dirilis</string>
+    <string name="director">Direktur</string>
+    <string name="actors">Aktor</string>
+    <string name="title_movies">Film</string>
+    <string name="title_tv_show">Acara TV</string>
+    <string name="overview">Ikhtisar</string>
+    <string name="episode">Episode</string>
+    <string name="detail">Detail</string>
+    <string name="runtime">Durasi</string>
+    <string name="change_language_settings">Ubah pengaturan bahasa</string>
+    <string name="failed_load_movies">Gagal memuat film</string>
+    <string name="movies_not_available">Film tidak tersedia</string>
+    <string name="failed_load_tv_show">Gagal memuat tv show</string>
+    <string name="tv_show_not_available">Tv show tidak tersedia</string>
+</resources>

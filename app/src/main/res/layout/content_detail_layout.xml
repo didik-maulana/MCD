@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="@dimen/activity_vertical_margin">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_label_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/detail"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_director_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_runtime_label"
+            style="@style/MovieDetailTextStyle"
+            android:layout_marginTop="16dp"
+            android:text="@string/runtime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_detail" />
+
+        <TextView
+            android:id="@+id/tv_runtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_runtime_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_detail"
+            tools:text="75m" />
+
+        <TextView
+            android:id="@+id/tv_date_label"
+            style="@style/MovieDetailTextStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/released_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_runtime" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_date_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_runtime"
+            tools:text="December 12, 2019" />
+
+        <TextView
+            android:id="@+id/tv_director_label"
+            style="@style/MovieDetailTextStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/director"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_director"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_director_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date"
+            tools:text="John Abraham" />
+
+        <TextView
+            android:id="@+id/tv_actor_label"
+            style="@style/MovieDetailTextStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/actors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_director_label" />
+
+        <TextView
+            android:id="@+id/tv_actors"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_actor_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_director"
+            tools:text="Actor" />
+
+        <TextView
+            android:id="@+id/tv_episode_label"
+            style="@style/MovieDetailTextStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/episode"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actors" />
+
+        <TextView
+            android:id="@+id/tv_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/tv_episode_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actors"
+            tools:text="13 Episodes" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

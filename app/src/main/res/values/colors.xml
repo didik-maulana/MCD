@@ -4,8 +4,7 @@
     <color name="colorPrimaryDark">#008FE0</color>
     <color name="colorAccent">#00A5FF</color>
     <color name="white">#FFFFFF</color>
-    <color name="whiteLilac">#F5F3FB</color>
+    <color name="whiteLilac">#F0F0FF</color>
     <color name="dustyGrey">#999999</color>
     <color name="sandyBrown">#F5A759</color>
-    <color name="alto">#DEDEDE</color>
 </resources>

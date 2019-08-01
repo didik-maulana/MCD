@@ -2,127 +2,18 @@
     <string name="app_name">Movie Apps</string>
     <string name="icon_star">Icon Star</string>
     <string name="movie_poster">Movie Poster</string>
-    <string name="released_date">Released Date :</string>
-    <string name="director">Director :</string>
-    <string name="actors">Actors :</string>
-
-    <string-array name="movies_title">
-        <item>Avenger Infinity War</item>
-        <item>Venom</item>
-        <item>Bird Box</item>
-        <item>Bohemian Rhapsody</item>
-        <item>Bumble Bee</item>
-        <item>Creed</item>
-        <item>Robin Hood</item>
-        <item>Glass</item>
-    </string-array>
-
-    <string-array name="movies_rate">
-        <item>8.3</item>
-        <item>6.6</item>
-        <item>7.0</item>
-        <item>8.1</item>
-        <item>6.5</item>
-        <item>7.3</item>
-        <item>5.8</item>
-        <item>6.5</item>
-    </string-array>
-
-    <string-array name="movies_date">
-        <item>April 25, 2018</item>
-        <item>December 18, 2018</item>
-        <item>December 21, 2018</item>
-        <item>February 12, 2019</item>
-        <item>April 2, 2019</item>
-        <item>March 1, 2016</item>
-        <item>February 5, 2019</item>
-        <item>January 18, 2019</item>
-    </string-array>
-
-    <string-array name="movies_overview">
-        <item>As the Avengers and their allies have continued to protect the world from threats too large
-            for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of
-            intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable
-            power, and use them to inflict his twisted will on all of reality. Everything the Avengers have
-            fought for has led up to this moment - the fate of Earth and existence itself has never been more
-            uncertain.</item>
-        <item>Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally
-            becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his
-            newfound powers to protect the world from a shadowy organization looking for a symbiote
-            of their own.</item>
-        <item>
-            Five years after an ominous unseen presence drives most of society to suicide, a survivor and her
-            two children make a desperate bid to reach safety.</item>
-        <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon
-            take the music world by storm when they form the rock \'n\' roll band Queen in 1970. Hit songs become
-            instant classics. When Mercury\'s increasingly wild lifestyle starts to spiral out of control, Queen soon
-            faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.</item>
-        <item>On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town.
-            Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee,
-            battle-scarred and broken. When Charlie revives him, she quickly learns this is no ordinary yellow
-            VW bug.</item>
-        <item>The former World Heavyweight Champion Rocky Balboa serves as a trainer and mentor to Adonis Johnson, the son of
-            his late friend and former rival Apollo Creed</item>
-        <item>A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt
-            English crown.</item>
-        <item>In a series of escalating encounters, former security guard David Dunn uses his supernatural
-            abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities.
-            Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets
-            critical to both men.</item>
-    </string-array>
-
-    <string-array name="movies_runtime">
-        <item>2h 29m</item>
-        <item>1h 52m</item>
-        <item>2h 4m</item>
-        <item>2h 15m</item>
-        <item>1h 54m</item>
-        <item>2h 13m</item>
-        <item>1h 56m</item>
-        <item>2h 9m</item>
-    </string-array>
-
-    <string-array name="movies_genres">
-        <item>Adventure / Action / Fantasy</item>
-        <item>Sci-Fi / Action</item>
-        <item>Thriller / Drama</item>
-        <item>Drama / Music</item>
-        <item>Action / Adventure / Sci-Fi</item>
-        <item>Drama</item>
-        <item>Adventure / Action / Thriller</item>
-        <item>Thriller / Mystery / Drama</item>
-    </string-array>
-
-    <string-array name="movies_director">
-        <item>Joe Russo</item>
-        <item>Ruben Fleischer</item>
-        <item>Susanne Bier</item>
-        <item>Bryan Singer</item>
-        <item>Travis Knight</item>
-        <item>Ryan Coogler</item>
-        <item>Otto Bathurst</item>
-        <item>M. Night Shyamalan</item>
-    </string-array>
-
-    <string-array name="movies_actors">
-        <item>Robert Downey Jr., Chris Hemsworth, Chris Evans, Scarlett </item>
-        <item>Tom Hardy, Michelle Williams, Riz Ahmed, Reid Scott</item>
-        <item>Sandra Bullock, Trevante Rhodes, John Malkovich, Sarah Paulson</item>
-        <item>Rami Malek, Gwilym Lee, Ben Hardy, Joseph Mazzello</item>
-        <item>Hailee Steinfeld, Jorge Lendeborg Jr., John Cena</item>
-        <item>Michael B. Jordan, Sylvester Stallone, Tessa Thompson</item>
-        <item>Taron Egerton, Jamie Foxx, Ben Mendelsohn, Eve Hewson</item>
-        <item>James McAvoy, Bruce Willis, Samuel L. Jackson, Sarah Paulson</item>
-    </string-array>
-
-    <array name="movies_poster">
-        <item>@drawable/poster_avenger_infinity</item>
-        <item>@drawable/poster_venom</item>
-        <item>@drawable/poster_bird_box</item>
-        <item>@drawable/poster_bohemian</item>
-        <item>@drawable/poster_bumblebee</item>
-        <item>@drawable/poster_creed</item>
-        <item>@drawable/poster_robin_hood</item>
-        <item>@drawable/poster_creed</item>
-    </array>
+    <string name="released_date">Released Date</string>
+    <string name="director">Director</string>
+    <string name="actors">Actors</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tv_show">TV Show</string>
+    <string name="overview">Overview</string>
+    <string name="episode">Episode</string>
+    <string name="detail">Detail</string>
+    <string name="runtime">Runtime</string>
+    <string name="change_language_settings">Change language settings</string>
+    <string name="failed_load_movies">Failed load movies</string>
+    <string name="movies_not_available">Movies not available</string>
+    <string name="failed_load_tv_show">Failed load tv show</string>
+    <string name="tv_show_not_available">Tv show not available</string>
 </resources>
