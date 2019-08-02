@@ -11,8 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.didik.mcd.R;
-import com.didik.mcd.presentation.movie.MovieFragment;
-import com.didik.mcd.presentation.tv.TvShowFragment;
+import com.didik.mcd.presentation.movie.list.MovieFragment;
+import com.didik.mcd.presentation.tv.list.TvShowFragment;
 
 public class MainActivity extends AppCompatActivity {
 
