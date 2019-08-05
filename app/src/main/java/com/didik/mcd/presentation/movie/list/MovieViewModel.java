@@ -18,7 +18,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-class MovieViewModel extends AndroidViewModel {
+public class MovieViewModel extends AndroidViewModel {
     private MutableLiveData<List<Movie>> movies = new MutableLiveData<>();
     private MutableLiveData<Boolean> stateLoading = new MutableLiveData<>();
     private MutableLiveData<String> errorMessage = new MutableLiveData<>();
