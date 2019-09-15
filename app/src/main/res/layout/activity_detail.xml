@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.movie.detail.MovieDetailActivity">
+    tools:context=".ui.movie.detail.MovieDetailActivity">
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -33,34 +33,37 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:background="@color/colorPrimaryDark" />
 
-            <ImageButton
-                android:id="@+id/img_button_back"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
+            <LinearLayout
+                android:id="@+id/container_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@android:color/transparent"
-                android:contentDescription="@string/icon_back"
-                android:src="@drawable/ic_arrow_back"
-                android:tint="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/img_poster"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:background="@drawable/rounded_orange_background"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                app:layout_constraintStart_toEndOf="@+id/img_poster"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/img_poster"
-                android:layout_width="105dp"
-                android:layout_height="160dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="65dp"
-                android:scaleType="fitXY"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:riv_border_color="@color/white"
-                app:riv_border_width="2dp"
-                app:riv_corner_radius="6dp"
-                tools:background="@color/colorPrimary" />
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:contentDescription="@string/icon_star"
+                    android:src="@drawable/ic_star"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="9.8" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_title"
@@ -77,38 +80,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/img_banner"
                 tools:text="Toy Story 4" />
 
-            <LinearLayout
-                android:id="@+id/container_rate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_orange_background"
-                android:orientation="horizontal"
-                android:paddingStart="6dp"
-                android:paddingEnd="6dp"
-                app:layout_constraintStart_toEndOf="@+id/img_poster"
-                app:layout_constraintTop_toBottomOf="@+id/tv_title">
-
-                <TextView
-                    android:id="@+id/tv_rate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    tools:text="9.8" />
-
-                <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="2dp"
-                    android:contentDescription="@string/icon_star"
-                    android:src="@drawable/ic_star"
-                    android:tint="@color/white" />
-
-            </LinearLayout>
-
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/movie_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cardView"
@@ -148,6 +128,20 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_poster"
+                android:layout_width="105dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="65dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="6dp"
+                tools:background="@color/colorPrimary" />
 
             <include
                 android:id="@+id/include"

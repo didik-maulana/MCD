@@ -1,9 +1,9 @@
 package com.didik.mcd.rest;
 
-import com.didik.mcd.model.MovieDetail;
-import com.didik.mcd.model.MovieResponse;
-import com.didik.mcd.model.TvShowDetail;
-import com.didik.mcd.model.TvShowResponse;
+import com.didik.mcd.data.entity.MovieDetail;
+import com.didik.mcd.data.entity.MovieResponse;
+import com.didik.mcd.data.entity.TvShowDetail;
+import com.didik.mcd.data.entity.TvShowResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

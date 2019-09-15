@@ -17,4 +17,8 @@
     <string name="genres">Genres</string>
     <string name="productions">Productions</string>
     <string name="icon_back">Icon back</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="msg_icon_empty_data">icon empty data</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

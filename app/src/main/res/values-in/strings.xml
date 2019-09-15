@@ -18,4 +18,6 @@
     <string name="genres">Kategori</string>
     <string name="productions">Produksi</string>
     <string name="icon_back">Ikon kembali</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="msg_icon_empty_data">icon empty data</string>
 </resources>
