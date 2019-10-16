@@ -12,15 +12,16 @@ import com.bumptech.glide.Glide;
 import com.didik.mcd.BuildConfig;
 import com.didik.mcd.R;
 import com.didik.mcd.data.entity.TvShow;
+import com.didik.mcd.helper.ItemClickable;
 
 import java.util.List;
 
-class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder> {
+public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder> {
 
     private List<TvShow> tvShows;
-    private TvShowListener mItemListener;
+    private ItemClickable mItemListener;
 
-    TvShowAdapter(List<TvShow> tvShows, TvShowListener mItemListener) {
+    public TvShowAdapter(List<TvShow> tvShows, ItemClickable mItemListener) {
         this.tvShows = tvShows;
         this.mItemListener = mItemListener;
     }
@@ -48,7 +49,7 @@ class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>
         private TextView tvTitle;
         private TextView tvRate;
 
-        TvShowViewHolder(@NonNull View view, final TvShowListener mItemListener) {
+        TvShowViewHolder(@NonNull View view, final ItemClickable mItemListener) {
             super(view);
             tvTitle = view.findViewById(R.id.tv_title);
             tvRate = view.findViewById(R.id.tv_rate);
@@ -57,7 +58,7 @@ class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mItemListener.onTvShowClicked(getAdapterPosition());
+                    mItemListener.onItemClicked(getAdapterPosition());
                 }
             });
         }

@@ -9,16 +9,15 @@
     <string name="episode">Episode</string>
     <string name="detail">Detail</string>
     <string name="runtime">Runtime</string>
-    <string name="change_language_settings">Change language settings</string>
+    <string name="change_language_settings">Language Settings</string>
     <string name="failed_load_movies">Failed load movies</string>
     <string name="movies_not_available">Movies not available</string>
     <string name="failed_load_tv_show">Failed load tv show</string>
     <string name="tv_show_not_available">Tv show not available</string>
     <string name="genres">Genres</string>
     <string name="productions">Productions</string>
-    <string name="icon_back">Icon back</string>
     <string name="title_favorite">Favorite</string>
     <string name="msg_icon_empty_data">icon empty data</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="key_movies" translatable="false">movies</string>
+    <string name="key_tv_shows" translatable="false">tv_shows</string>
 </resources>

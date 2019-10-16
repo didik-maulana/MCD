@@ -18,7 +18,8 @@ public class DateFormatter {
 
         try {
             Date parseDate = sdf.parse(date);
-            formattedDate = new SimpleDateFormat(NEW_FORMAT_DATE, Locale.getDefault()).format(parseDate);
+            formattedDate =
+                    new SimpleDateFormat(NEW_FORMAT_DATE, Locale.getDefault()).format(parseDate);
         } catch (ParseException error) {
             error.printStackTrace();
         }

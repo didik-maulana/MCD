@@ -34,16 +34,19 @@ public class TvShowDetailViewModel extends AndroidViewModel {
                     public void onResponse(@NonNull Call<TvShowDetail> call,
                                            @NonNull Response<TvShowDetail> response) {
                         stateLoading.setValue(false);
-                        if (response.body() != null) tvShow.postValue(response.body());
+                        if (response.body() != null)
+                            tvShow.postValue(response.body());
                         else
-                            errorMessage.setValue(getApplication().getString(R.string.tv_show_not_available));
+                            errorMessage.setValue(
+                                    getApplication().getString(R.string.tv_show_not_available));
                     }
 
                     @Override
                     public void onFailure(@NonNull Call<TvShowDetail> call,
                                           @NonNull Throwable throwable) {
                         stateLoading.setValue(false);
-                        errorMessage.setValue(getApplication().getString(R.string.failed_load_tv_show));
+                        errorMessage
+                                .setValue(getApplication().getString(R.string.failed_load_tv_show));
                     }
                 });
     }

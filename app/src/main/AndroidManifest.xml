@@ -21,7 +21,9 @@
         <activity
             android:name=".ui.movie.detail.MovieDetailActivity"
             android:theme="@style/AppThemeNoActionBar" />
-        <activity android:name=".ui.tv.detail.TvShowDetailActivity" />
+        <activity
+            android:name=".ui.tv.detail.TvShowDetailActivity"
+            android:theme="@style/AppThemeNoActionBar" />
     </application>
 
 </manifest>

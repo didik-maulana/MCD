@@ -12,15 +12,16 @@ import com.bumptech.glide.Glide;
 import com.didik.mcd.BuildConfig;
 import com.didik.mcd.R;
 import com.didik.mcd.data.entity.Movie;
+import com.didik.mcd.helper.ItemClickable;
 
 import java.util.List;
 
-class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
     private List<Movie> movieList;
-    private MovieListener mItemListener;
+    private ItemClickable mItemListener;
 
-    MovieAdapter(List<Movie> movieList, MovieListener mItemListener) {
+    public MovieAdapter(List<Movie> movieList, ItemClickable mItemListener) {
         this.movieList = movieList;
         this.mItemListener = mItemListener;
     }
@@ -48,7 +49,7 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
         private TextView tvMovieTitle;
         private TextView tvMovieRate;
 
-        MovieViewHolder(View view, final MovieListener mItemListener) {
+        MovieViewHolder(View view, final ItemClickable mItemListener) {
             super(view);
 
             tvMovieTitle = view.findViewById(R.id.tv_title);
@@ -58,7 +59,7 @@ class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mItemListener.onMovieClicked(getAdapterPosition());
+                    mItemListener.onItemClicked(getAdapterPosition());
                 }
             });
         }

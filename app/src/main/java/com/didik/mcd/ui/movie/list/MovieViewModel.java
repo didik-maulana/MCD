@@ -42,14 +42,16 @@ public class MovieViewModel extends AndroidViewModel {
                         if (response.body() != null) {
                             movies.postValue(response.body().getResults());
                         } else {
-                            errorMessage.setValue(getApplication().getString(R.string.movies_not_available));
+                            errorMessage.setValue(
+                                    getApplication().getString(R.string.movies_not_available));
                         }
                     }
 
                     @Override
                     public void onFailure(@NonNull Call<MovieResponse> call,
                                           @NonNull Throwable throwable) {
-                        errorMessage.setValue(getApplication().getString(R.string.failed_load_movies));
+                        errorMessage
+                                .setValue(getApplication().getString(R.string.failed_load_movies));
                         stateLoading.setValue(false);
                     }
                 });

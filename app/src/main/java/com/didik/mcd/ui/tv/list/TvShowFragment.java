@@ -17,13 +17,14 @@ import android.widget.Toast;
 
 import com.didik.mcd.R;
 import com.didik.mcd.data.entity.TvShow;
+import com.didik.mcd.helper.ItemClickable;
 import com.didik.mcd.ui.tv.detail.TvShowDetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class TvShowFragment extends Fragment implements TvShowListener {
+public class TvShowFragment extends Fragment implements ItemClickable {
 
     private List<TvShow> tvShowList = new ArrayList<>();
     private RecyclerView recyclerViewTvShow;
@@ -95,7 +96,7 @@ public class TvShowFragment extends Fragment implements TvShowListener {
     }
 
     @Override
-    public void onTvShowClicked(int position) {
+    public void onItemClicked(int position) {
         Intent intent = new Intent(getActivity(), TvShowDetailActivity.class);
         intent.putExtra(TvShowDetailActivity.EXTRA_TV_SHOW_ID, tvShowList.get(position).getId());
         startActivity(intent);

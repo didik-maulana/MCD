@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.didik.mcd.R;
 import com.didik.mcd.data.entity.Movie;
+import com.didik.mcd.helper.ItemClickable;
 import com.didik.mcd.ui.movie.detail.MovieDetailActivity;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ import java.util.List;
 import java.util.Objects;
 
 
-public class MovieFragment extends Fragment implements MovieListener {
+public class MovieFragment extends Fragment implements ItemClickable {
 
     private List<Movie> movieList = new ArrayList<>();
     private RecyclerView recyclerViewMovies;
@@ -77,10 +78,8 @@ public class MovieFragment extends Fragment implements MovieListener {
             @Override
             public void onChanged(Boolean state) {
                 if (state) {
-                    recyclerViewMovies.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
                 } else {
-                    recyclerViewMovies.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -99,7 +98,7 @@ public class MovieFragment extends Fragment implements MovieListener {
     }
 
     @Override
-    public void onMovieClicked(int position) {
+    public void onItemClicked(int position) {
         Intent intent = new Intent(getActivity(), MovieDetailActivity.class);
         intent.putExtra(MovieDetailActivity.EXTRA_MOVIE_ID, movieList.get(position).getId());
         startActivity(intent);
