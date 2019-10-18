@@ -1,17 +1,13 @@
 package com.didik.mcd.ui.movie.list;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -24,6 +20,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 
 public class MovieFragment extends Fragment implements ItemClickable {
 
@@ -32,6 +36,7 @@ public class MovieFragment extends Fragment implements ItemClickable {
     private ProgressBar progressBar;
     private MovieAdapter movieAdapter;
     private MovieViewModel viewModel;
+    private EditText edtSearch;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -45,10 +50,12 @@ public class MovieFragment extends Fragment implements ItemClickable {
         bindView(view);
         setupViewModel();
         setupRecyclerView();
+        setupSearchListener();
         viewModel.fetchMovies();
     }
 
     private void bindView(View view) {
+        edtSearch = view.findViewById(R.id.edt_search);
         progressBar = view.findViewById(R.id.progress_bar);
         recyclerViewMovies = view.findViewById(R.id.rv_movies);
         recyclerViewMovies.setHasFixedSize(true);
@@ -67,6 +74,7 @@ public class MovieFragment extends Fragment implements ItemClickable {
         viewModel.getMovies().observe(this, new Observer<List<Movie>>() {
             @Override
             public void onChanged(@Nullable List<Movie> movies) {
+                movieList.clear();
                 if (movies != null) {
                     movieList.addAll(movies);
                     movieAdapter.notifyDataSetChanged();
@@ -89,6 +97,29 @@ public class MovieFragment extends Fragment implements ItemClickable {
             @Override
             public void onChanged(String message) {
                 showErrorMessage(message);
+            }
+        });
+    }
+
+    private void setupSearchListener() {
+        edtSearch.setVisibility(View.VISIBLE);
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence text, int i, int i1, int i2) {
+                String query = text.toString();
+                if (query.trim().length() > 3) {
+                    viewModel.fetchSearchMovies(query);
+                } else if (query.trim().length() == 0) {
+                    viewModel.fetchMovies();
+                }
             }
         });
     }

@@ -1,16 +1,16 @@
 package com.didik.mcd.ui.tv.detail;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.support.annotation.NonNull;
 
 import com.didik.mcd.BuildConfig;
 import com.didik.mcd.R;
 import com.didik.mcd.data.entity.TvShowDetail;
 import com.didik.mcd.rest.ApiClient;
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

@@ -5,16 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.movie.list.MovieFragment">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_movies"
+    <EditText
+        android:id="@+id/edt_search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/app_20dp"
+        android:background="@drawable/bg_search_rounded"
+        android:hint="@string/action_search"
+        android:padding="12dp"
         android:visibility="gone" />
 
     <RelativeLayout
@@ -43,5 +44,18 @@
             android:textStyle="italic" />
 
     </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edt_search" />
 
 </RelativeLayout>

@@ -15,15 +15,29 @@
         <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.movie.detail.MovieDetailActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".ui.tv.detail.TvShowDetailActivity"
             android:theme="@style/AppThemeNoActionBar" />
-    </application>
 
+        <receiver android:name=".widget.FavoriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/movie_widget_info" />
+        </receiver>
+        <service
+            android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
 </manifest>

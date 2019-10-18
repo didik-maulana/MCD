@@ -3,10 +3,6 @@ package com.didik.mcd.ui.main;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -14,6 +10,11 @@ import com.didik.mcd.R;
 import com.didik.mcd.ui.favorite.FavoriteFragment;
 import com.didik.mcd.ui.movie.list.MovieFragment;
 import com.didik.mcd.ui.tv.list.TvShowFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 

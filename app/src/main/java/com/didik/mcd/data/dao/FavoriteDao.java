@@ -1,12 +1,12 @@
 package com.didik.mcd.data.dao;
 
-import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.Query;
-
 import com.didik.mcd.data.entity.Favorite;
 
 import java.util.List;
+
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.Query;
 
 @Dao
 public interface FavoriteDao {

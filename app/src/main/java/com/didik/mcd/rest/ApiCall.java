@@ -15,9 +15,19 @@ public interface ApiCall {
     Call<MovieResponse> getMovies(@Query("api_key") String apiKey,
                                   @Query("language") String language);
 
+    @GET("search/movie")
+    Call<MovieResponse> getSearchMovies(@Query("api_key") String apiKey,
+                                        @Query("language") String language,
+                                        @Query("query") String query);
+
     @GET("discover/tv")
     Call<TvShowResponse> getTvShows(@Query("api_key") String apiKey,
                                     @Query("language") String language);
+
+    @GET("search/tv")
+    Call<TvShowResponse> getSearchTvShows(@Query("api_key") String apiKey,
+                                          @Query("language") String language,
+                                          @Query("query") String query);
 
     @GET("movie/{id}")
     Call<MovieDetail> getMovieDetail(@Path("id") Integer id,

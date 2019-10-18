@@ -20,4 +20,10 @@
     <string name="msg_icon_empty_data">icon empty data</string>
     <string name="key_movies" translatable="false">movies</string>
     <string name="key_tv_shows" translatable="false">tv_shows</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="msg_emtpy_data">Empty Data</string>
+    <string name="action_search">Search ...</string>
+    <string name="msg_daily_reminder">Hai, yuk buka aplikasi Movie App</string>
+    <string name="title_widget_favorite">Favorite Movies</string>
 </resources>

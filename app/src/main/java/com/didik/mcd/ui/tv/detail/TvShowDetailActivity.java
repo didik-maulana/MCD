@@ -1,11 +1,7 @@
 package com.didik.mcd.ui.tv.detail;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -21,6 +17,11 @@ import com.didik.mcd.data.entity.Favorite;
 import com.didik.mcd.data.entity.TvShowDetail;
 
 import java.lang.ref.WeakReference;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 public class TvShowDetailActivity extends AppCompatActivity implements View.OnClickListener {
 
