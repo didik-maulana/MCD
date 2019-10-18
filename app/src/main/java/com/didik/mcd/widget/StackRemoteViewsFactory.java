@@ -59,27 +59,28 @@ class StackRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
     public RemoteViews getViewAt(int position) {
         RemoteViews remoteViews =
                 new RemoteViews(context.getPackageName(), R.layout.movie_widget_item);
-        Favorite favorite = favorites.get(position);
+        if (!favorites.isEmpty()) {
+            Favorite favorite = favorites.get(position);
+            try {
+                Bitmap imageView = Glide.with(context)
+                        .asBitmap()
+                        .load(BuildConfig.IMAGE_URL + favorite.getPosterPath())
+                        .centerCrop()
+                        .submit()
+                        .get();
+                remoteViews.setImageViewBitmap(R.id.imageView, imageView);
+            } catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
 
-        try {
-            Bitmap imageView = Glide.with(context)
-                    .asBitmap()
-                    .load(BuildConfig.IMAGE_URL + favorite.getPosterPath())
-                    .centerCrop()
-                    .submit()
-                    .get();
-            remoteViews.setImageViewBitmap(R.id.imageView, imageView);
-        } catch (ExecutionException | InterruptedException e) {
-            e.printStackTrace();
+            Bundle bundle = new Bundle();
+            bundle.putInt(FavoriteWidget.EXTRA_ITEM, position);
+            bundle.putInt(FavoriteWidget.EXTRA_MOVIE_ID, favorite.getId());
+
+            Intent intent = new Intent();
+            intent.putExtras(bundle);
+            remoteViews.setOnClickFillInIntent(R.id.containerView, intent);
         }
-
-        Bundle bundle = new Bundle();
-        bundle.putInt(FavoriteWidget.EXTRA_ITEM, position);
-        bundle.putInt(FavoriteWidget.EXTRA_MOVIE_ID, favorite.getId());
-
-        Intent intent = new Intent();
-        intent.putExtras(bundle);
-        remoteViews.setOnClickFillInIntent(R.id.containerView, intent);
 
         return remoteViews;
     }

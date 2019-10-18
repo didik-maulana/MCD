@@ -63,11 +63,13 @@ public class FavoriteWidget extends AppWidgetProvider {
         context.startActivity(intent);
     }
 
-    private void updateWidgetComponent(Context context) {
+    public void updateWidgetComponent(Context context) {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
         ComponentName thisWidget = new ComponentName(context, FavoriteWidget.class);
         int[] appWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
-        appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetIds, R.id.stack_view);
+        if (appWidgetIds != null) {
+            appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetIds, R.id.stack_view);
+        }
     }
 
     @Override

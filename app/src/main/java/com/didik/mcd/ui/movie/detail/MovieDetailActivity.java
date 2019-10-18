@@ -15,6 +15,7 @@ import com.didik.mcd.R;
 import com.didik.mcd.data.database.DatabaseClient;
 import com.didik.mcd.data.entity.Favorite;
 import com.didik.mcd.data.entity.MovieDetail;
+import com.didik.mcd.widget.FavoriteWidget;
 
 import java.lang.ref.WeakReference;
 
@@ -172,6 +173,8 @@ public class MovieDetailActivity extends AppCompatActivity {
             insertFavoriteTask.execute();
         }
         handleFavoriteIcon(!isFavorite);
+
+        new FavoriteWidget().updateWidgetComponent(this);
     }
 
     private void handleFavoriteIcon(Boolean isFavorite) {
