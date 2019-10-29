@@ -5,4 +5,5 @@
     <string name="msg_daily_reminder">Hai, yuk buka aplikasi Movie App</string>
     <string name="title_widget_favorite">Favorite Movies</string>
     <string name="msg_widget_empty_favorites">Empty Favorite Movies</string>
+    <string name="settings">Settings</string>
 </resources>

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import com.didik.mcd.R;
 import com.didik.mcd.ui.favorite.FavoriteFragment;
 import com.didik.mcd.ui.movie.list.MovieFragment;
+import com.didik.mcd.ui.settings.SettingsActivity;
 import com.didik.mcd.ui.tv.list.TvShowFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_language_settings) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

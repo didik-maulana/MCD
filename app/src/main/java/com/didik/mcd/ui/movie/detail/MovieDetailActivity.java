@@ -50,6 +50,12 @@ public class MovieDetailActivity extends AppCompatActivity {
         viewModel.fetchMovieDetail(movieId);
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+        super.onBackPressed();
+    }
+
     private void setIntentData() {
         movieId = getIntent().getIntExtra(EXTRA_MOVIE_ID, 0);
     }
