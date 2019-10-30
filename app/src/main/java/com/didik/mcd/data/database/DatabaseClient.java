@@ -14,6 +14,7 @@ public class DatabaseClient {
                 context.getApplicationContext(),
                 AppDatabase.class,
                 DB_NAME)
+                .allowMainThreadQueries()
                 .build();
     }
 

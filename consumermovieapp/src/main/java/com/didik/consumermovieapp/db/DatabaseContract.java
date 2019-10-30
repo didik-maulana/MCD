@@ -3,11 +3,11 @@ package com.didik.consumermovieapp.db;
 import android.net.Uri;
 
 public class DatabaseContract {
-    public static final String AUTHORITY = "com.didik.mcd.provider";
+    private static final String AUTHORITY = "com.didik.mcd.provider";
     private static final String SCHEME = "content";
 
     public static final class FavoriteColumns {
-        public static final String TABLE_NAME = "favorites";
+        static final String TABLE_NAME = "favorites";
 
         public static final String ID = "id";
         public static final String TITLE = "title";
@@ -19,6 +19,5 @@ public class DatabaseContract {
                 .authority(AUTHORITY)
                 .appendPath(TABLE_NAME)
                 .build();
-
     }
 }

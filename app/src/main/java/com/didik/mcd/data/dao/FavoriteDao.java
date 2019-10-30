@@ -24,6 +24,6 @@ public interface FavoriteDao {
     @Query("DELETE FROM favorites WHERE id=:id")
     void removeFavorite(Integer id);
 
-    @Query("SELECT * FROM favorites WHERE type=:type")
-    Cursor getFavoritesCursor(String type);
+    @Query("SELECT * FROM favorites")
+    Cursor getFavoritesCursor();
 }

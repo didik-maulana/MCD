@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,8 +34,8 @@ interface LoadFavoritesCallback {
 }
 
 public class MovieFragment extends Fragment implements LoadFavoritesCallback {
-    private RecyclerView recyclerView;
     private FavoriteAdapter adapter;
+    private static final String KEY_MOVIES = "movies";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,7 +52,7 @@ public class MovieFragment extends Fragment implements LoadFavoritesCallback {
     }
 
     private void setupRecyclerView(View view) {
-        recyclerView = view.findViewById(R.id.rv_movies);
+        RecyclerView recyclerView = view.findViewById(R.id.rv_movies);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
     }
@@ -64,9 +63,10 @@ public class MovieFragment extends Fragment implements LoadFavoritesCallback {
         Handler handler = new Handler(handlerThread.getLooper());
 
         DataObserver myObserver = new DataObserver(handler, getContext());
-        getContext().getContentResolver()
-                .registerContentObserver(DatabaseContract.FavoriteColumns.CONTENT_URI, true,
-                        myObserver);
+        getContext().getContentResolver().registerContentObserver(
+                DatabaseContract.FavoriteColumns.CONTENT_URI,
+                true,
+                myObserver);
 
         new LoadFavoriteAsync(getContext(), this).execute();
     }
@@ -78,7 +78,7 @@ public class MovieFragment extends Fragment implements LoadFavoritesCallback {
     @Override
     public void postExecute(ArrayList<Favorite> favorites) {
         if (favorites.size() > 0) {
-            adapter.setFavorites(favorites);
+            adapter.setFavorites(MappingHelper.filterFavorites(favorites, KEY_MOVIES));
         } else {
             adapter.setFavorites(new ArrayList<Favorite>());
             Toast.makeText(getContext(), "Data Favorite Belum Tersedia", Toast.LENGTH_SHORT).show();
@@ -106,7 +106,6 @@ public class MovieFragment extends Fragment implements LoadFavoritesCallback {
             Context context = weakContext.get();
             Cursor dataCursor = context.getContentResolver()
                     .query(DatabaseContract.FavoriteColumns.CONTENT_URI, null, null, null, null);
-            Log.d("Cursorr data", dataCursor.toString() + dataCursor.getCount());
             return MappingHelper.mapCursorToArrayList(dataCursor);
         }
 

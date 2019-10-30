@@ -16,8 +16,6 @@ public class MovieAppProvider extends ContentProvider {
 
     private static final String AUTHORITY = "com.didik.mcd.provider";
     private static final String KEY_FAVORITES = "favorites";
-    private static final String KEY_MOVIES = "movies";
-    private static final String KEY_TV_SHOW = "tv_shows";
     private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
 
     static {
@@ -36,18 +34,8 @@ public class MovieAppProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        Cursor cursor;
-        switch (URI_MATCHER.match(uri)) {
-            case KEY_CODE_MOVIE:
-                cursor = DatabaseClient.getInstance(getContext()).getAppDatabase().getFavoriteDao()
-                        .getFavoritesCursor(KEY_MOVIES);
-                return cursor;
-            case KEY_CODE_TV_SHOW:
-                cursor = DatabaseClient.getInstance(getContext()).getAppDatabase().getFavoriteDao()
-                        .getFavoritesCursor(KEY_TV_SHOW);
-                return cursor;
-        }
-        return null;
+        return DatabaseClient.getInstance(getContext()).getAppDatabase().getFavoriteDao()
+                .getFavoritesCursor();
     }
 
     @Override

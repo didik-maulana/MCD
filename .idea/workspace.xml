@@ -12,84 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd1ab6c-6f44-42bd-bb0e-cc0019e1503f" name="Default Changelist" comment="fix auto update stack widget">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_alpha05_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/settings/SettingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/root_preferences.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/consumermovieapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/androidTest/java/com/didik/consumermovieapp/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/model/Favorite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/bg_orange_rounded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_empty_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_favorite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_image_placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_movies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_star.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_tv_show.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_white_favorite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/fragment_movie.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/item_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/menu/menu_bottom_navigation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumermovieapp/src/test/java/com/didik/consumermovieapp/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/movie/detail/MovieDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/movie/detail/MovieDetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -129,65 +67,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java">
+        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-              <folding>
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="335">
+              <caret line="84" column="9" selection-start-line="79" selection-start-column="8" selection-end-line="84" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-607">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java">
+        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="123" selection-start-line="20" selection-start-column="123" selection-end-line="20" selection-end-column="123" />
+            <state relative-caret-position="222">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fragment_tv_show</find>
-      <find>rv_tv</find>
       <find>img_button_back</find>
       <find>setContent</find>
       <find>application</find>
@@ -241,6 +134,8 @@
       <find>key_</find>
       <find>favorites</find>
       <find>Cursor</find>
+      <find>&gt;movies</find>
+      <find>masukkkk</find>
     </findStrings>
     <replaceStrings>
       <replace>\'</replace>
@@ -255,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/entity/TvShow.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/tv/list/TvShowAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/favorite/FavoriteTvShowFragment.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
@@ -281,31 +175,32 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/widget/StackRemoteViewsFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/widget/FavoriteWidget.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/helper/FavoriteProvider.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/movie/detail/MovieDetailActivity.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/menu/menu_bottom_navigation.xml" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/fragment_movie.xml" />
-        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/layout/item_layout.xml" />
         <option value="$PROJECT_DIR$/consumermovieapp/build.gradle" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java" />
-        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/model/Favorite.java" />
-        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_options.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/main/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/root_preferences.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/settings/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java" />
+        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java" />
+        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java" />
+        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/interface/LoadFavoritesCallback.java" />
         <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java" />
+        <option value="$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java" />
       </list>
     </option>
   </component>
@@ -330,6 +225,53 @@
           <expand>
             <path>
               <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mcd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mcd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mcd" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="strings" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
               <item name="consumermovieapp" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
@@ -342,13 +284,6 @@
               <item name="consumermovieapp" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="consumermovieapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
-              <item name="consumermovieapp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="consumermovieapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
@@ -356,6 +291,17 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="consumermovieapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="consumermovieapp" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="MCD" type="1abcf292:AndroidViewProjectNode" />
+              <item name="consumermovieapp" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -724,26 +670,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/service/DailyReminderReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="66" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/widget/StackWidgetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.0.0/28eb83e6a29ac3fbb87aa632cfa0e644a313f491/activity-1.0.0-sources.jar!/androidx/activity/ComponentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -848,16 +774,6 @@
     <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/res/drawable/ic_empty_data.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/ui/favorite/FavoriteFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -935,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/res/layout/fragment_movie.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/asus-asus_x00td-J9AXGF02Z5927R5/data/data/com.didik.mcd/databases/movie_db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -965,13 +873,6 @@
             <element signature="e#533#534#0" expanded="true" />
             <element signature="e#566#567#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1025,13 +926,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1055,34 +949,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/database/DatabaseClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="123" selection-start-line="20" selection-start-column="123" selection-end-line="20" selection-end-column="123" />
+        <state relative-caret-position="251">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/db/DatabaseContract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        <state relative-caret-position="420">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java">
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/content/UriMatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="273">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/data/dao/FavoriteDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1091,19 +997,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/didik/mcd/provider/MovieAppProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="231">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/adapter/FavoriteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/helper/MappingHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/interface/LoadFavoritesCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/MovieFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+        <state relative-caret-position="335">
+          <caret line="84" column="9" selection-start-line="79" selection-start-column="8" selection-end-line="84" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/res/layout/fragment_movie.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumermovieapp/src/main/java/com/didik/consumermovieapp/ui/TvShowFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

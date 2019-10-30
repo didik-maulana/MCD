@@ -1,6 +1,5 @@
 package com.didik.consumermovieapp.adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,11 +40,6 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MovieV
 
     @Override
     public int getItemCount() {
-        if (favorites == null) {
-            Log.d("Cuuursor size", String.valueOf(favorites));
-        } else {
-            Log.d("Cuuursor size", "tidak null" + favorites.size());
-        }
         return favorites == null ? 0 : favorites.size();
     }
 
