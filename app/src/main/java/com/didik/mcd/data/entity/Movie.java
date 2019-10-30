@@ -15,6 +15,9 @@ public class Movie {
     @SerializedName("vote_average")
     private Double voteAverage;
 
+    @SerializedName("release_date")
+    private String releaseDate;
+
     public Integer getId() {
         return id;
     }
@@ -45,5 +48,13 @@ public class Movie {
 
     public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
 }

@@ -38,4 +38,9 @@ public interface ApiCall {
     Call<TvShowDetail> getTvShowDetail(@Path("id") Integer id,
                                        @Query("api_key") String apiKey,
                                        @Query("language") String language);
+
+    @GET("discover/movie")
+    Call<MovieResponse> getMovieRelease(@Query("api_key") String apiKey,
+                                        @Query("primary_release_date.gte") String gte,
+                                        @Query("primary_release_date.lte") String lte);
 }

@@ -35,6 +35,16 @@
             android:multiprocess="true"
             android:permission="com.didik.mcd.provider.READ_WRITE" />
 
+        <receiver
+            android:name=".service.DailyReminderReceiver"
+            android:enabled="true"
+            android:exported="false"></receiver>
+
+        <receiver
+            android:name=".service.ReleaseReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
         <receiver android:name=".widget.FavoriteWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
